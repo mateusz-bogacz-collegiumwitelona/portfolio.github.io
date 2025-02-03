@@ -1,6 +1,6 @@
-# _config.yml
-title: "Moje Portfolio"
-description: "Portfolio Mateusza Bogacza"
+title: Moje Portfolio
+description: >
+  Portfolio Mateusza Bogacza
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://mateusz-bogacz-collegiumwitelona.github.io" # the base hostname & protocol for your site
 
@@ -12,4 +12,4 @@ plugins:
   - jekyll-seo-tag
 
 sass:
-  sass_dir: "css"
+  sass_dir: css
