@@ -1,0 +1,226 @@
+:root {
+    --main-purple: rgb(102, 51, 153);/* navbar, buttons, obramowanie elemntów, ikony,podkreślenia aktywnych linków */
+    --cream-bg: rgb(255, 253, 240); /* background, tło sekcji, cards */
+    --gold-accent: rgb(218, 165, 32);/* hover, małe ikony, podkreślenia nagłówków, elementy dekoracyjne, obramowania zdjęć*/
+    --dark-purple: rgb(48, 25, 72); /*główny tekst, nagłówki, stopka*/
+    --light-purple: rgb(147, 112, 219); /* dodatkowe akcenty i gradienty */
+ }
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cream-bg);
+    color: var(--dark-purple);
+}
+
+#navbar {
+    background-color: var(--main-purple);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    min-height: 60px; /* Stała wysokość navbara */
+}
+
+.navbar-brand {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin: 0; 
+    padding: 0; 
+}
+
+.navbar-brand img {
+    height: 35px;
+    width: 35px;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-collapse {
+    min-height: 40px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--gold-accent) !important;
+}
+
+.hero-section {
+    background: linear-gradient(45deg, var(--main-purple), var(--light-purple));
+    padding: 100px 0;
+    color: var(--cream-bg);
+}
+
+.hero-section .display-4 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero-section .lead {
+    color: var(--cream-bg);
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    background-color: white;
+    border-radius: 8px;
+}
+
+.card-title {
+    color: var(--main-purple);
+    border-bottom: 2px solid var(--gold-accent);
+    padding-bottom: 10px;
+}
+
+#button {
+    background-color: var(--main-purple);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+#button:hover {
+    background-color: var(--dark-purple);
+    transform: scale(1.05);
+}
+
+h2 {
+    color: var(--main-purple);
+    border-left: 4px solid var(--gold-accent);
+    padding-left: 15px;
+}
+
+#footer {
+    flex-shrink: 0;
+    background-color: var(--dark-purple);
+    color: var(--cream-bg);
+}
+
+#footer a {
+    color: var(--gold-accent);
+    transition: color 0.3s ease;
+}
+
+#footer a:hover {
+    color: var(--light-purple);
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--gold-accent);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+}
+
+#visitCount {
+    color: var(--gold-accent);
+    font-weight: bold;
+}
+
+.badge.bg-secondary {
+    background-color: var(--light-purple) !important;
+    color: var(--cream-bg) !important;
+}
+
+.card .btn-outline-primary{
+    color: var(--dark-purple);
+    border-color: var(--dark-purple);
+}
+
+.card .btn-outline-primary:hover {
+    background-color: var(--main-purple);
+    border-color: var(--main-purple);
+}
+
+.welcome-text {
+    line-height: 1.6;
+}
+
+.meme-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#linkedin-ico, #github-ico {
+    color: var(--main-purple);
+    transition: all 0.3s ease;
+}
+
+#linkedin-ico:hover, #github-ico:hover {
+    color: var(--dark-purple);
+    transform: scale(1.1);
+}
+
+#linkedin-ico:active, #github-ico:active {
+    color: var(--light-purple);
+    transform: scale(0.95);
+}
+
+#send-button {
+    background-color: var(--light-purple);
+    transition: all 0.3s ease;
+}
+
+#send-button:hover {
+    background-color: var(--dark-purple);
+    transform: scale(1.1);
+}
+
+#send-button:active {
+    background-color: var(--light-purple);
+    transform: scale(0.95);
+}
+
+.projects-bages {
+    background-color: var(--main-purple);
+}
+
+.invalid-feedback {
+    color: var(--dark-purple);
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.form-control.is-invalid {
+    border-color: #dc3545;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+.form-control.is-valid {
+    border-color: #198754;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23198754' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}

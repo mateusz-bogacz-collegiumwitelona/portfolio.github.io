@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Moja strona</title>
+   <link rel="stylesheet" href="./css/main.css">
+   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link rel="icon" type="image/x-icon" href="./resource/favicon.ico">  
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg navbar-dark sticky-top" id="navbar">
+       <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./resource/favicon.png" alt="Logo" width="35" height="35">
+            </a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+               <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav ms-auto">
+                   <li class="nav-item">
+                       <a class="nav-link" href="./index.html">Strona głowna</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="./about_me.html">O mnie</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="./projects.html">Projekty</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="./contacts.html">Kontakt</a>
+                   </li>
+               </ul>
+           </div>
+       </div>
+   </nav>
+
+   <section class="hero-section text-center">
+       <div class="container">
+           <h1 class="display-4">O mnie</h1>
+           <p class="lead">Krótko i na temat</p>
+       </div>
+   </section>
+
+   <main class="container mt-5">
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6">
+                <h2>O mnie</h2>
+                <p>Witam, nazywam się Mateusz. Jestem studentem drugiego roku Informatyki na Collegium Witelona Uczelnia Państwowa w Legnicy.</p>
+                <p>Moje zainteresowania obejmują szeroki zakres dziedzin informatycznych, ze szczególnym naciskiem na DevOps oraz wsparcie techniczne. Posiadam również kompetencje w zakresie rozwoju aplikacji zarówno po stronie frontendowej, jak i backendowej, czego przykładem jest niniejsze portfolio.</p>
+                <p>Doświadczenie zawodowe zdobyłem podczas praktyk w Drozapol-Profil S.A., gdzie zajmowałem się administracją sieci i serwerów oraz pełniłem rolę specjalisty Help Desk. Te doświadczenia pozwoliły mi rozwinąć zarówno umiejętności techniczne, jak i kompetencje miękkie w zakresie wsparcia użytkowników.</p>
+                <p>W wolnym czasie rozwijam swoje umiejętności programistyczne, tworzę strony internetowe oraz zgłębiam możliwości systemów Linux. Obecnie poszerzam swoją wiedzę w obszarze Internet of Things (IoT), pracując z platformami Raspberry Pi i Arduino.</p>
+                <p>Szczegółowe informacje o moich kwalifikacjach i doświadczeniu znajdą Państwo w moim CV.</p>            
+            </div>
+            <div class="col-md-6">
+                <object
+                    data="./resource/CV_MBD.pdf"
+                    type="application/pdf"
+                    width="100%"
+                    height="600px">
+                        <p>Twoja przeglądarka nie obsługuje wyświetlania PDF. Możesz <a href="./resource/CV_MBD.pdf">pobrać plik PDF</a> aby wyświetlić go lokalnie.</p>
+                </object>
+            </div>
+        </div>
+   </main>
+   
+   <footer class="footer py-4" id="footer">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-4">
+                   <div class="text-center mt-3">
+                       <a href="https://github.com/mateusz-bogacz-collegiumwitelona"  target="_blank" rel="noopener noreferrer" class="me-3"><i class="fa-brands fa-github fa-lg"></i></a>
+                       <a href="https://www.linkedin.com/in/mateusz-bogacz-drewniak-a981a034a" target="_blank" rel="noopener noreferrer"target="_blank" rel="noopener noreferrer" class="me-3"><i class="fa-brands fa-linkedin fa-lg"></i></a>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <div class="text-center mt-3">
+                       <small>&copy; 2024 Mateusz Bogacz-Drewniak. Wszystkie prawa zastrzeżone.</small>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <div class="text-center mt-3">
+                       <small>Licznik odwiedzin: <span id="visitCount">0</span></small>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </footer>
+
+   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="./js/visit_counter.js"></script>
+</body>
+</html>
